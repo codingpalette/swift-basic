@@ -28,3 +28,27 @@ let name = "Sung"
 for _ in closedRange {
     print("name ---> \(name)")
 }
+
+for i in closedRange {
+    if i % 2 == 0 {
+        print("---> 짝수: \(i)")
+    }
+}
+
+for i in closedRange where i % 2 == 0 {
+    print("---> 짝수2: \(i)")
+}
+
+for i in closedRange {
+    if i == 3 {
+        continue
+    }
+    print("---> \(i)")
+}
+
+
+for i in closedRange {
+    for j in closedRange {
+        print("구구단 : \(i) * \(j) = \(i * j)")
+    }
+}
